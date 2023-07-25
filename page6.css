@@ -1,0 +1,38 @@
+#landing-page-6{
+    height: 100vh;
+    background-color: rgb(23, 28, 26);
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+#landing-page-6 div{
+    width: 500px;
+    height: 500px;
+    /* border: 2px solid red; */
+    margin-top: 4rem;
+}
+#left-6{
+    background-image: url("./images/left-6.jpg");
+    background-size: cover;
+}
+#right-6{
+    margin-left: 1rem;
+    color: white;
+}
+#right-6 p:nth-child(1){
+    color: #22b925;
+    margin-left: 2rem;
+    font-size: 2rem;
+}
+#right-6 h3{
+color: white;
+font-size: 2.5rem;
+ margin-left: 2rem;
+}
+#right-6 p{
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+#right-6 input{
+    margin-left: 2rem;
+}

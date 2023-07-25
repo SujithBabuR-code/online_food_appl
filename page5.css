@@ -1,0 +1,150 @@
+@import url(./page6.css);
+:root {
+    --green: #27ae60;
+    --black: #192a56;
+    --white: rgb(222, 227, 225);
+}
+
+#landing-page-5 {
+    height: 65vh;
+    background-color: rgb(23, 28, 26);
+    display: flex;
+    color: var(--white);
+}
+
+#landing-page-5 div {
+    border: 3px solid rgb(128, 127, 127);
+}
+
+#left-5 {
+    width: 22%;
+    height: 400px;
+    margin-left: 10rem;
+}
+
+#left-5 #first {
+    width: 100%;
+    font-size: 3rem;
+    color: var(--white);
+    margin: 10px;
+}
+
+#breaker {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(201, 201, 201);
+}
+
+#right-5 {
+    width: 40%;
+    height: 400px;
+}
+
+#left-5 #second {
+    position: relative;
+    top: 130px;
+    font-size: 3rem;
+    color: var(--white);
+    margin: 10px;
+}
+
+#right-5 h2 {
+    font-size: 2.7rem;
+    margin: 1.5rem;
+}
+
+#right-5 p {
+    margin: 5rem 1.5rem;
+}
+
+.right-image {
+    width: 300px;
+    position: relative;
+    top: -330px;
+    left: 550px;
+}
+
+
+
+/* ended ------ */
+
+
+
+/* media queries */
+
+/* for tablet screen size */
+@media (max-width:770px) {
+    #landing-page-5 {
+        height: 75vh;
+        position: relative;
+        top: 149vh;
+    }
+
+    #left-5 {
+        width: 22%;
+        height: 300px;
+        margin-left: 5rem;
+    }
+
+    #left-5 #first {
+        width: 100%;
+        font-size: 1.7rem;
+        margin-top: 15px;
+    }
+
+    #left-5 #second {
+        font-size: 1.7rem;
+        margin: 10px;
+    }
+
+    #right-5 {
+        width: 40%;
+        height: 300px;
+    }
+
+    #right-5 h2 {
+        font-size: 1.7rem;
+        margin: 1rem;
+    }
+
+    #right-5 p {
+        margin: 10px 20px;
+    }
+
+    .right-image {
+        position: relative;
+        left: 300px;
+        top: -200px;
+        width: 200px;
+    }
+}
+
+/* for mobile screen size */
+@media (max-width:380px) {
+    #landing-page-5 {
+        height: 51vh;
+    }
+
+    #left-5 {
+        width: 40%;
+        font-size: 1rem;
+        margin-left: 30px;
+    }
+
+    #right-5 h2 {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    #right-5 p {
+        margin: 2px;
+        width: 90%;
+        font-size: .6rem;
+    }
+
+    .right-image {
+        display: none;
+    }
+}

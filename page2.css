@@ -1,0 +1,113 @@
+@import url(./page3.css);
+:root{
+    --green:#27ae60;
+    --black:#192a56;
+    --white:rgb(222,227,225);
+}
+#landing-page-2{
+    height: 90vh;
+    background-color: rgb(23,28,26);
+    display: flex;
+}
+#landing-page-2 div{
+    margin-top: 4rem;
+    /* margin-left: 2rem; */
+    height: 400px;
+    /* border: 1px solid red; */
+    color: var(--white);
+}
+#left{
+    margin-top: 4rem;
+    margin-left: 2rem;
+    height: 400px;
+    width: 25%;
+}
+#center{
+    width: 30%;
+}
+#right{
+width: 40%;
+}
+#left p{
+    color: var(--green);
+}
+#left  h1{
+    color: rgb(222,227,225);
+    font-size: 5rem;
+    margin: 1rem;
+}
+ #left #sign{
+    margin:1.7rem;
+    width: 150px;
+}
+
+#center{
+    background-image: url("./images/centerImage.jpg");
+    background-size: cover;
+}
+#right p{
+margin-left: 12px;
+color: var(--white);
+}
+#right  a span .icon{
+   /* padding: 10px; */
+    margin: 12px;
+}
+#right a:hover{
+    color: var(--green);
+}
+#right .para{
+margin: 20px;
+}
+
+
+
+
+
+
+
+/* media queries */
+@media (max-width:770px) {
+    /* for left section */
+    #landing-page-2{
+        height: 150vh;
+        display: block;
+        position: absolute;
+    }
+    #left{
+        width: 100%;
+        height: 30px;
+    }
+    #left h1,img{
+        font-size: 2rem;
+        margin: 0px;
+    }
+    /* for center section */
+    #center{
+        width: 95%;
+        position: relative;
+        bottom: 290px;
+        margin: 10px;
+    }
+    /* for right section */
+    #right{
+        position: relative;
+        bottom: 300px;
+        width: 100%;
+    }
+}
+@media (max-width:380px) {
+     #landing-page-2{
+        height: 160vh;
+     }
+    #right{
+        position: relative;
+        bottom: 300px;
+        width: 90%;
+        font-size: .9rem;
+    }
+    #right .para{
+        text-align: center;
+        margin:10px;
+    }
+}

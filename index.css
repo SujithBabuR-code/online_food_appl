@@ -1,0 +1,257 @@
+@import url(./page2.css);
+*{
+    font-family: 'Londrina Solid', cursive;
+    margin: 0px;padding: 0px;
+    text-decoration: none;
+    outline: none;
+    /* text-transform: capitalize;
+    transition: all .2s linear; */
+}
+*::selection{
+    background-color: var(--green);
+}
+/* defined colors */
+:root{
+    --green:#27ae60;
+    --black:#192a56;
+}
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+}
+/* all defines styles end */
+
+/* main section starts */
+#main-section{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh;
+   background-size: cover;
+   background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3)),
+   url("./images/cheers-group-handsome-retro-welldressed-man-gangsters-spend-time-club-drinking-whiskey-bar-counter-multiethnic-male-bachelor-mafia-party-restaurant\ \(1\).jpg");
+}
+/* navbar part */
+header{
+    position: fixed;
+    top: 0;left:0;right:0;
+    padding: 1rem 7%;
+    display: flex;
+    align-self: center;
+    justify-content: space-evenly;
+    z-index: 1000;
+    font-size: 1.2rem;
+}
+a{
+    color: white;
+}
+.logo{
+    font-size: 2rem;
+    position: relative;
+    left: -80px;
+}
+.navbar a{
+    color: white;
+    margin: .5rem;
+}
+.navbar a:hover{
+    border-bottom: 3px solid white;
+    font-size: 1.4rem;
+}
+.order-btn{
+    background-color: var(--green);
+    color: white;
+    width: 10rem;
+    height: 1.8rem;
+    border-radius: 10px;
+    border: none;
+}
+.order-btn:hover{
+    cursor: pointer;
+    background-color: #166939;
+}
+#menu-bar{
+    position: relative;
+    right:40px;
+    font-size: 1.5rem;
+    display: none;
+    
+}
+
+#menu-bar:hover{
+cursor: pointer;
+}
+/* header section end */
+
+
+/*          main section --------- */
+#center-section{
+    position: relative;
+    top: 100px;
+    height: 80vh;
+    /* border: 2px solid red; */
+    width: 80%;
+}
+#center-section h1{
+    /* width: 90%; */
+    position: relative;
+    top: 40%;
+    text-align: center;
+    color: rgb(216, 210, 210);
+    font-size: 4rem;
+}
+#center-section p{
+    width: 50%;
+    position: relative;
+    top: 43%;
+    left: 27%;
+    color: rgb(234, 227, 227);
+    text-align: center;
+    margin: 12px;
+}
+.book-table-btn{
+    position: relative;
+    top: 43%;
+    left: 43%;
+     background-color: var(--green);
+    color: white;
+    width: 13rem;
+    height: 2rem;
+    border-radius: 10px;
+    border: none;
+}
+.book-table-btn:hover{
+    cursor: pointer;
+    background-color: #166939;
+}
+/* ended for center section  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+/* for tablet screen size */
+@media (max-width:770px) {
+    header .items{
+        height: 10px;
+        display: block;
+        padding: 4px;
+        background: transparent;
+        display: none;
+        border-top: 2px solid white;
+         /* width: 100%;
+        background-color: black; */
+        /* transition: 2s linear; */
+    }
+   header{
+    height: 75px;
+   }
+    #menu-bar{
+        display: inline;
+    }
+    .logo{
+        font-size: 1.5rem;
+    }
+
+    /* ended for header */
+
+    /* ---------- for center section --------- */
+    #center-section{
+        width: 70%;
+        top: 50px;
+    }
+    #center-section h1{
+        font-size: 3rem;
+    }
+    #center-section p{
+         width: 70%;
+         position: relative;
+         left: 70px;
+    }
+    .book-table-btn{
+    position: relative;
+    top: 42%;
+    left: 30%;
+    }
+     /* .order-btn{
+    visibility: hidden;
+    } */
+}
+
+/* for mobile devices ---- */
+@media (max-width:380px) {
+    header{
+        height: 30px;
+    }
+    header .items{
+        height: 5px;
+        display: block;
+        padding: .5rem;
+        background: transparent;
+        display: none;
+        position: relative;
+        left: 40px;
+        border: none;
+         /* width: 100%;
+        background-color: black; */
+        /* transition: 2s linear; */
+    }
+    header .items:hover{
+        border-bottom: 2px solid white;
+    }
+    .order-btn{
+    display: none;
+    }
+    .logo{
+        font-size: 1.2rem;
+        position: relative;
+        left: -30px;
+    }
+    #menu-bar{
+        display: inline;
+        position: relative;
+        left: -20px;
+    }
+
+      /* ---------- for center section --------- */
+    #center-section{
+         width: 90%;
+        top: 30px;
+    }
+     #center-section h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    #center-section p{
+         width: 100%;
+         left: -10px;
+    }
+    .book-table-btn{
+    top: 42%;
+    left: 20%;
+    }
+    /* ended for center section */
+}

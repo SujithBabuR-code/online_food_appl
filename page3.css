@@ -1,0 +1,97 @@
+@import url(./page4.css);
+:root {
+    --green: #27ae60;
+    --black: #192a56;
+    --white: rgb(222, 227, 225);
+}
+
+#landing-page-3 {
+    height: 80vh;
+    background-color: rgb(23, 28, 26);
+    display: flex;
+}
+#landing-page-3 div{
+    height: 400px;
+}
+
+#left-3 {
+    height: 400px;
+    margin-left: 2rem; 
+    width: 45%;
+    background-image: url("./images/left-3.jpg");
+    background-size: cover;
+}
+
+#center-3 {
+    width: 28%;
+    height: 400px;
+    margin-left: 1.5rem;
+    background-image: url("./images/center-3.jpg");
+    background-size: cover;
+}
+
+#right-3 {
+    width: 15%;
+    height: 400px;
+    margin-left: 1.5rem;
+    background-image: url("./images/right-3.jpg");
+    background-size: cover;
+}
+
+
+
+/* ended */
+
+
+
+/* media queries */
+@media (max-width:770px) {
+    
+    /* for left section */
+    #landing-page-3 {
+    margin: 0px;
+    height: 50vh;
+    position: relative;
+    top: 150vh;
+}
+#landing-page-3 div{
+    height: 270px;
+}
+#left-3{
+    margin: 0px;
+     width: 50%;
+    }
+    #center-3{
+        width: 25%;
+    }
+    #right-3{
+        margin-left: 5px;
+        width: 20%;
+    }
+}
+
+
+/* for mobile screen size */
+@media (max-width:380px){
+    #landing-page-3{
+        position: relative;
+        top: 159vh;
+        height: 90vh;
+        display: block;
+    }
+    #left-3{
+    margin: 2px;
+     width: 95%;
+    }
+    #center-3{
+        width: 50%;
+        margin: 0px;
+    }
+    #right-3{
+        position: relative;
+        left: 190px;
+        bottom: 270px;
+        margin: 0px;
+        width: 50%;
+    }
+}
